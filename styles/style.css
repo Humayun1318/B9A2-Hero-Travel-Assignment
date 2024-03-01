@@ -180,7 +180,40 @@ button {
     font-size: 1em;
 }
 
+/* popular tour style */
 
+.popular-tour {
+    display: flex;
+    align-items: center;
+    gap: 53px;
+}
+
+.circle-list div {
+    margin-bottom: 1.5em;
+}
+
+.circle-list>div:first-child {
+    margin-top: 1.5em;
+}
+
+.tour-des {
+    margin-top: 1.5em;
+}
+
+.circle-list div::before {
+    content: "\2022";
+    color: #86888b;
+    margin-right: 10px;
+
+}
+
+.tour-btn {
+    margin-top: 2em;
+}
+
+.popular-image img{
+    width: 100%;
+}
 
 
 @media screen and (max-width:600px) {
@@ -246,6 +279,12 @@ button {
 
     }
 
+    /* popular tour style */
+    .popular-tour{
+        flex-direction: column;
+    }
+
+
 
 }
 
@@ -307,6 +346,11 @@ button {
     .banner-input-fields>button {
         width: 100%;
 
+    }
+
+    /* popular tour */
+    .popular-tour{
+        flex-direction: column;
     }
 
 }
