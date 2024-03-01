@@ -13,6 +13,22 @@ a {
     color: inherit;
 }
 
+/* btn design */
+.btn {
+    border: 0;
+    border-radius: 8px;
+    background: #FF5400;
+    padding: 14px 34px;
+    font-weight: 800;
+    font-size: 1.25em;
+    color: #FFF;
+}
+
+/* tile design */
+.title-text {
+    font-weight: 800;
+    font-size: 2.5em;
+}
 
 /* Set font properties for body and fixed width of the body*/
 body {
@@ -34,7 +50,7 @@ body {
     border: 2px solid black;
 }
 
-/* Header style */
+/* Header nav bar style */
 header {
     display: flex;
     align-items: center;
@@ -67,11 +83,12 @@ header {
     align-items: center;
     gap: 24px;
 }
-.right-section .desktop-nav ul li:hover{
+
+.right-section .desktop-nav ul li:hover {
     background-color: rgb(214, 201, 225);
-    padding:  5px;
+    padding: 5px;
     border-radius: 8px;
-    
+
 }
 
 .right-section .desktop-nav ul li a {
@@ -96,19 +113,77 @@ header {
     font-size: 1.5em;
 }
 
+/* header banner styles */
 
-.menu {
-    /* display: none; */
+.banner-background-img {
+    background-image: url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1em;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+    margin-bottom: 6.2em;
+}
 
+.banner {
+    border: 2px solid rgba(27, 27, 8, 0.948);
+    width: 80%;
+}
+
+.banner .text {
+    text-align: center;
+}
+
+.banner-heading-title {
+    font-weight: 800;
+    font-size: 4em;
+    color: #FFF;
+}
+
+.banner-input-fields {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+}
+
+.banner-input-fields * {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.banner-input-fields input,
+select,
+button {
+    border: 0;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.banner-input-fields *:focus {
+    outline: none;
+}
+
+.banner-input-fields button {
+    color: white;
+    background-color: #FF5400;
+    cursor: pointer;
+    margin-right: 0;
+    font-size: 1em;
 }
 
 
 
 
-
-
-
-@media screen and (max-width:450px) {
+@media screen and (max-width:600px) {
     body {
         font-size: 14px;
     }
@@ -135,7 +210,6 @@ header {
     }
 
     .menu-toggle~#menu .desktop-nav ul {
-        /* display: block; */
         flex-direction: column;
         gap: 10px;
 
@@ -150,9 +224,32 @@ header {
     .menu-toggle:checked~label #menu-open-icon {
         display: none;
     }
+
+    /* header banner design */
+    .banner-heading-title {
+        font-size: 1.57em;
+    }
+
+    .banner-input-fields {
+        display: block;
+    }
+
+    .banner-input-fields input,
+    select {
+        width: 100%;
+        margin-bottom: 16px;
+        margin-right: 0;
+    }
+
+    .banner-input-fields>button {
+        width: 100%;
+
+    }
+
+
 }
 
-@media screen and (min-width:450px) and (max-width:992px) {
+@media screen and (min-width:601px) and (max-width:992px) {
     .container {
         width: 90%;
     }
@@ -175,7 +272,6 @@ header {
     }
 
     .menu-toggle~#menu .desktop-nav ul {
-        /* display: block; */
         flex-direction: column;
         gap: 10px;
 
@@ -189,6 +285,28 @@ header {
     /* Hide open icon when checkbox is checked */
     .menu-toggle:checked~label #menu-open-icon {
         display: none;
+    }
+
+    /* header banner design for tab */
+
+    .banner-heading-title {
+        font-size: 2.5em;
+    }
+
+    .banner-input-fields {
+        display: block;
+    }
+
+    .banner-input-fields input,
+    select {
+        width: 100%;
+        margin-bottom: 16px;
+        margin-right: 0;
+    }
+
+    .banner-input-fields>button {
+        width: 100%;
+
     }
 
 }

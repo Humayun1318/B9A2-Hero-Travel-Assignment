@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!-- header nav bar -->
     <header class="container">
         <div class="left-section">
             <div class="logo">
@@ -22,7 +23,6 @@
                 <p>Trip <span>Defender</span></p>
             </div>
         </div>
-
         <input type="checkbox" id="menu-toggle" 
          class="menu-toggle">
         <label for="menu-toggle" class="icon-width">
@@ -31,7 +31,6 @@
             <i class="fas fa-times menu-icon" 
             id="menu-close-icon"></i>
         </label>
-
         <div class="right-section" id="menu">
             <nav class="desktop-nav">
                 <ul>
@@ -42,18 +41,68 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-
-            <!-- <nav class="menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Packages</a></li>
-                    <li><a href="#">Testimonial</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav> -->
         </div>
     </header>
+    <main>
+        <!-- this section including header part 
+            but build in main of the body -->
+        <section 
+        class="container banner-background-img">
+            <div class="banner">
+                <div class="text">
+                    <h2 class="banner-heading-title">
+                        Explore Your Travel
+                    </h2>
+                    <p style="color: white;
+                         margin: 1.5em auto 3em;
+                         width: 90%;">
+                        Embark on adventures and 
+                        discover
+                        new horizons with 'Explore Your
+                        Travel', where every journey
+                        is an opportunity to
+                        explore the world.</p>
+                </div>
+                <div class="banner-input-fields">
+                    <input type="text" 
+                     placeholder="Where go">
+                    <select>
+                        <option value="option1">
+                            When go</option>
+                        <option value="option2">
+                            Time1</option>
+                        <option value="option3">
+                            Time2</option>
+                        <option value="option4">
+                            Time3</option>
+                        <option value="other">Other
+                        </option>
+                    </select>
+                    <select>
+                        <option value="option1">
+                        Select Type</option>
+                            <option value="option2">
+                            Basic</option>
+                        <option value="option3">
+                            Premium</option>
+                        <option value="option4">
+                            Premium Plus</option>
+                        <option value="other">Other
+                        </option>
+                    </select>
+                    <button >
+                        <span>
+                            <i class="fas fa-search">
+                                <span 
+                                style="margin-left:2px;"
+                                >Find Now</span>
+                            </i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
