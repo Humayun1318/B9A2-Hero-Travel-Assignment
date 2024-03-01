@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Set font properties for body and fixed width of the body*/
+body {
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    max-width: 1440px;
+    border: 5px solid red;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    width: 81.25%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+/* Header style */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-section .logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo img {
+    width: 48px;
+    height: auto;
+}
+
+.logo p {
+    font-size: 2.24em;
+    font-weight: 800;
+}
+
+
+.logo p span {
+    color: #ff5400;
+}
+
+.right-section .desktop-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.right-section .desktop-nav ul li:hover{
+    background-color: rgb(214, 201, 225);
+    padding:  5px;
+    border-radius: 8px;
+    
+}
+
+.right-section .desktop-nav ul li a {
+    font-size: 1.13em;
+    color: #424247;
+}
+
+.right-section .desktop-nav ul li:first-child a {
+    color: #ff5400;
+}
+
+
+/* Hide the checkbox */
+.menu-toggle {
+    display: none;
+}
+
+/* Hide close icon by default */
+#menu-close-icon,
+#menu-open-icon {
+    display: none;
+    font-size: 1.5em;
+}
+
+
+.menu {
+    /* display: none; */
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width:450px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .right-section {
+        display: none;
+    }
+
+    #menu-open-icon {
+        display: block;
+    }
+
+    /* Show menu when checkbox is checked */
+    .menu-toggle:checked~#menu {
+        display: block;
+        position: absolute;
+        right: 0;
+        margin-top: 250px;
+        margin-right: 40px;
+    }
+
+    .menu-toggle~#menu .desktop-nav ul {
+        /* display: block; */
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    /* Show close icon when checkbox is checked */
+    .menu-toggle:checked~label #menu-close-icon {
+        display: block;
+    }
+
+    /* Hide open icon when checkbox is checked */
+    .menu-toggle:checked~label #menu-open-icon {
+        display: none;
+    }
+}
+
+@media screen and (min-width:450px) and (max-width:992px) {
+    .container {
+        width: 90%;
+    }
+
+    .right-section {
+        display: none;
+    }
+
+    #menu-open-icon {
+        display: block;
+    }
+
+    /* Show menu when checkbox is checked */
+    .menu-toggle:checked~#menu {
+        display: block;
+        position: absolute;
+        right: 0;
+        margin-top: 250px;
+        margin-right: 40px;
+    }
+
+    .menu-toggle~#menu .desktop-nav ul {
+        /* display: block; */
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    /* Show close icon when checkbox is checked */
+    .menu-toggle:checked~label #menu-close-icon {
+        display: block;
+    }
+
+    /* Hide open icon when checkbox is checked */
+    .menu-toggle:checked~label #menu-open-icon {
+        display: none;
+    }
+
+}
