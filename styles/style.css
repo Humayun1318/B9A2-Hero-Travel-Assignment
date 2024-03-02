@@ -360,6 +360,18 @@ button {
     left: 50%;
 }
 
+
+/* Customer survey styles */
+
+.deals-text{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+
 /* perfect place */
 
 .perfect-place {
