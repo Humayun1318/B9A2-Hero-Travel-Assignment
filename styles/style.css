@@ -37,7 +37,7 @@ body {
     font-style: normal;
     font-weight: 400;
     max-width: 1440px;
-    border: 5px solid red;
+    /* border: 5px solid red; */
     height: 100%;
     margin: 0 auto;
 }
@@ -47,7 +47,7 @@ body {
     height: auto;
     margin: 0 auto;
     padding: 10px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 /* Header nav bar style */
@@ -66,11 +66,13 @@ header {
 .logo img {
     width: 48px;
     height: auto;
+    cursor: pointer;
 }
 
 .logo p {
     font-size: 2.24em;
     font-weight: 800;
+    cursor: pointer;
 }
 
 
@@ -130,7 +132,7 @@ header {
 }
 
 .banner {
-    border: 2px solid rgba(27, 27, 8, 0.948);
+    /* border: 2px solid rgba(27, 27, 8, 0.948); */
     width: 80%;
 }
 
@@ -460,10 +462,12 @@ button {
 
 .deals-content button {
     margin-top: 1.5em;
+    cursor: pointer;
 }
 
 .deals-content-2 button {
     margin-top: 1.5em;
+    cursor: pointer;
 }
 
 
@@ -504,6 +508,7 @@ button {
 
 .perfect-place-btn {
     margin-top: 2em;
+    cursor: pointer;
 }
 
 .perfect-place-image img {
@@ -577,6 +582,7 @@ newsletter section style
 
 .subs-btn {
     width: 100%;
+    cursor: pointer;
 }
 
 .newsletter-img img {
@@ -593,6 +599,7 @@ newsletter section style
     padding: 1em;
     color: #FFF;
     transform: rotate(-19.628deg);
+    cursor: pointer;
 
 }
 
@@ -637,6 +644,7 @@ footer {
 .footer-logo p {
     font-size: 2em;
     font-weight: 800;
+    cursor: pointer;
 }
 
 .footer-fa-icon i {
@@ -817,6 +825,19 @@ footer {
 
     .testimonials {
         flex-direction: column;
+        gap: 2em;
+    }
+
+    /* deals and discount style */
+
+    .deals-content{
+        margin-top: 11.7em;
+        width: 100%;
+    }
+    .deals-content-2{
+        margin-top: 11.7em;
+        width: 100%;
+
     }
 
 }
@@ -928,6 +949,21 @@ footer {
 
     .testimonials {
         flex-direction: column;
+        gap: 2em;
     }
+
+
+         /* deals and discount style */
+    
+         .deals-content {
+             margin-top: 11.7em;
+             width: 100%;
+         }
+    
+         .deals-content-2 {
+             margin-top: 11.7em;
+             width: 100%;
+    
+         }
 
 }
