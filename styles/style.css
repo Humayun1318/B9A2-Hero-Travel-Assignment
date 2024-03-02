@@ -223,9 +223,10 @@ button {
 
 /* Destination style */
 
-.destination{
+.destination {
     margin-bottom: 5.625em;
 }
+
 .destination-text {
     width: 54%;
     margin: 0 auto;
@@ -305,18 +306,197 @@ button {
 
 /* why choose section styles */
 
-.choose-text{
+.choose-section {
+    margin-bottom: 5.625em;
+}
+
+.choose-text {
     text-align: center;
     width: 57%;
     margin: 0 auto;
 }
-.choose-text h4{
-    margin-bottom: 1.5em;
-}
-.choose-text > p{
+
+.choose-text h4 {
     margin-bottom: 1.5em;
 }
 
+.choose-text>p {
+    margin-bottom: 1.5em;
+}
+
+.choose-cart {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+}
+
+
+.cart {
+    padding: 2em 3.4em 2em 2em;
+    border-radius: 16px;
+}
+
+.cart h5 {
+    margin-top: 2em;
+    margin-bottom: 0.4em;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+.cart-1 {
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.cart-2 {
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.cart-3 {
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    position: relative;
+    left: 50%;
+}
+
+/* perfect place */
+
+.perfect-place {
+    display: flex;
+    align-items: center;
+    gap: 53px;
+    margin-bottom: 5em;
+}
+
+.perfect-place-text,
+.perfect-place-image {
+    flex: 1;
+}
+
+.circle-list-for-perfect-plc div {
+    margin-bottom: 1.5em;
+
+}
+
+.circle-list-for-perfect-plc>div:first-child {
+    margin-top: 1.5em;
+}
+
+.perfect-place-des {
+    margin-top: 1.5em;
+}
+
+.circle-list-for-perfect-plc div::before {
+    content: "\2022";
+    color: #86888b;
+
+}
+
+.perfect-place-btn {
+    margin-top: 2em;
+}
+
+.perfect-place-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.perfect-place-image {
+    position: relative;
+    display: inline-block;
+}
+
+.img-text-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 700;
+    font-size: 1.5em;
+
+}
+
+
+/* ................................
+newsletter section style
+................................. */
+
+.news-letter-section {
+    display: flex;
+    /* align-items: center; */
+    gap: 1.5em;
+    padding-bottom: 5.624em;
+}
+
+.news-input {
+    padding: 2.5em;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+}
+
+.news-input h5 {
+    color: #131318;
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+.news-input p {
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid rgba(19, 19, 24, 0.10);
+    ;
+}
+
+.news-input input {
+    margin-bottom: 1.5em;
+    padding: 1em 1.25em;
+    display: block;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    width: 100%;
+    border: 0;
+}
+
+.news-input input:focus {
+    outline: none;
+}
+
+.subs-btn {
+    width: 100%;
+}
+
+.newsletter-img img {
+    width: 100%;
+
+}
+
+.newsletter-img p {
+    font-size: 2em;
+    font-weight: 800;
+    border-radius: 16px;
+    background: #FF5400;
+    padding:  1em;
+    color: #FFF;
+    transform: rotate(-19.628deg);
+    border: 10px solid rgba(206, 216, 206, 0.834);
+}
+
+.newsletter-img {
+    border: 5px solid purple;
+    position: relative;
+}
+
+.newsletter-img-btn-dis {
+    position: absolute;
+}
+
+
+/* responsive for small device  */
 @media screen and (max-width:600px) {
     body {
         font-size: 14px;
@@ -387,7 +567,7 @@ button {
 
     /* destination styles */
 
-    .destination-text h4{
+    .destination-text h4 {
         font-size: 1.4em;
     }
 
@@ -397,10 +577,39 @@ button {
         row-gap: 1.5em;
     }
 
+    /* choose style */
 
+    .choose-text h4 {
+        font-size: 1.4em;
+    }
+
+    .choose-cart {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cart-3 {
+        position: static;
+    }
+
+    /* perfect place style */
+
+    .perfect-place {
+        flex-direction: column;
+    }
+
+    /* newsletter style */
+
+    .news-letter-section {
+        flex-direction: column;
+    }
 
 }
 
+
+
+
+
+/* tab responsive */
 @media screen and (min-width:601px) and (max-width:992px) {
     .container {
         width: 90%;
@@ -471,6 +680,32 @@ button {
         grid-template-columns: repeat(1, 1fr);
         gap: 0;
         row-gap: 1.5em;
+    }
+
+    /* choose style */
+
+    .choose-text h4 {
+        font-size: 1.4em;
+    }
+
+    .choose-cart {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cart-3 {
+        position: static;
+    }
+
+    /* perfect place style */
+
+    .perfect-place {
+        flex-direction: column;
+    }
+
+    /* newsletter style */
+
+    .news-letter-section {
+        flex-direction: column;
     }
 
 }
