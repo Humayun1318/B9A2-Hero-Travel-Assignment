@@ -24,6 +24,10 @@ a {
     color: #FFF;
 }
 
+.btn:hover {
+    background-color: #2980b9;
+}
+
 /* tile design */
 .title-text {
     font-weight: 800;
@@ -184,6 +188,10 @@ button {
     cursor: pointer;
     margin-right: 0;
     font-size: 1em;
+}
+
+.banner-input-fields button:hover {
+    background-color: #2980b9;
 }
 
 /* popular tour style */
