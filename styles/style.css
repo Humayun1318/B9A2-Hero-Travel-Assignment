@@ -530,7 +530,7 @@ footer {
     font-weight: 800;
 }
 
-.footer-fa-icon i{
+.footer-fa-icon i {
     font-size: 5em;
     margin-right: 0.5em;
     cursor: pointer;
@@ -538,17 +538,65 @@ footer {
 
 }
 
-.footer-fa-icon{
+.footer-fa-icon {
     padding-bottom: 3.1em;
-    border-bottom: 1px solid rgba(19, 19, 24, 0.10);;
+    border-bottom: 1px solid rgba(19, 19, 24, 0.10);
+    ;
 }
 
 
-.copy-right{
+.copy-right {
     padding-top: 3em;
     padding-bottom: 4.5em;
     font-weight: 300;
 }
+
+.copy-right i {
+    margin-right: 0.3em;
+    color: #a89399;
+}
+
+
+
+/* customers survey styles */
+.testimonials {
+    padding: 3em 0;
+    display: flex;
+}
+
+.survey h2 {
+    text-align: center;
+}
+
+.testimonial {
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 20px;
+    text-align: center;
+}
+
+.testimonial img {
+    width: 30%;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+.testimonial p {
+    font-size: 0.9em;
+    margin-bottom: 1em;
+    color: #555;
+}
+
+.testimonial .customer {
+    font-style: italic;
+    color: #888;
+}
+
+
+
+
+
 /* responsive for small device  */
 @media screen and (max-width:600px) {
     body {
@@ -656,6 +704,12 @@ footer {
         flex-direction: column;
     }
 
+    /* Survey styles */
+
+    .testimonials {
+        flex-direction: column;
+    }
+
 }
 
 
@@ -758,6 +812,12 @@ footer {
     /* newsletter style */
 
     .news-letter-section {
+        flex-direction: column;
+    }
+
+    /* Survey styles */
+
+    .testimonials {
         flex-direction: column;
     }
 
