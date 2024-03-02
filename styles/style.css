@@ -363,10 +363,107 @@ button {
 
 /* Customer survey styles */
 
-.deals-text{
+.deals-discount {
+    margin-bottom: 4.75em;
+}
+
+.deals-text {
     width: 70%;
     margin: 0 auto;
     text-align: center;
+}
+
+.deals-text h2 {
+    margin-bottom: 0.5em;
+}
+
+.deals-text p {
+    margin-bottom: 3em;
+}
+
+.deals-bg-image {
+    background-image: url(../Images/Group\ 39.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1em;
+    padding: 3.5em;
+    display: flex;
+    margin-bottom: 1.5em;
+
+
+}
+
+.deals-content {
+    margin-left: auto;
+    width: 50%;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    padding: 3.25em;
+
+
+}
+
+.deals-bg-image-2 {
+    background-image: url(../Images/Group\ 40.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1em;
+    padding: 3.5em;
+    margin-bottom: 1.5em;
+
+}
+
+.deals-content-2 {
+    width: 50%;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    padding: 3.25em;
+
+}
+
+.content-icon i,
+.content-icon span {
+    margin-right: 0.5em;
+}
+
+.content-icon i {
+    color: #ff5400;
+}
+
+.deals-content h5 {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+.deals-content-2 h5 {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+.deals-content-des {
+    margin-bottom: 1em;
+}
+
+.price {
+    font-size: 1.25em;
+    font-weight: 800;
+    color: #ff5400;
+}
+
+.deals-content button {
+    margin-top: 1.5em;
+}
+
+.deals-content-2 button {
+    margin-top: 1.5em;
 }
 
 
