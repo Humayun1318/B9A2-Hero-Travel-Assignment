@@ -30,6 +30,10 @@ a {
     font-size: 2.5em;
 }
 
+.description-color {
+    color: #5A5A5D;
+}
+
 /* Set font properties for body and fixed width of the body*/
 body {
     font-family: 'Mulish', sans-serif;
@@ -217,6 +221,7 @@ button {
 
 .tour-btn {
     margin-top: 2em;
+    cursor: pointer;
 }
 
 .popular-image img {
@@ -363,7 +368,7 @@ button {
 }
 
 
-/* Customer survey styles */
+/* deals and discount */
 
 .deals-discount {
     margin-bottom: 4.75em;
@@ -470,6 +475,19 @@ button {
     cursor: pointer;
 }
 
+.deals-btn-div {
+    width: 40%;
+    margin: 0 auto;
+
+}
+
+.deals-btn-div button {
+    /* padding: 0.2em; */
+    /* text-align: center; */
+    width: 100%;
+    cursor: pointer;
+
+}
 
 
 
@@ -830,14 +848,20 @@ footer {
 
     /* deals and discount style */
 
-    .deals-content{
+    .deals-content {
         margin-top: 11.7em;
         width: 100%;
     }
-    .deals-content-2{
+
+    .deals-content-2 {
         margin-top: 11.7em;
         width: 100%;
 
+    }
+
+    .deals-btn-div {
+        /* margin-left: auto; */
+        width: 90%;
     }
 
 }
@@ -847,7 +871,7 @@ footer {
 
 
 /* tab responsive */
-@media screen and (min-width:601px) and (max-width:992px) {
+@media screen and (min-width:601px) and (max-width:991px) {
     .container {
         width: 90%;
     }
@@ -953,17 +977,21 @@ footer {
     }
 
 
-         /* deals and discount style */
-    
-         .deals-content {
-             margin-top: 11.7em;
-             width: 100%;
-         }
-    
-         .deals-content-2 {
-             margin-top: 11.7em;
-             width: 100%;
-    
-         }
+    /* deals and discount style */
+
+    .deals-content {
+        margin-top: 11.7em;
+        width: 100%;
+    }
+
+    .deals-content-2 {
+        margin-top: 11.7em;
+        width: 100%;
+
+    }
+
+    .deals-btn-div {
+        width: 90%;
+    }
 
 }
