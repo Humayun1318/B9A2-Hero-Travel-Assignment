@@ -471,6 +471,7 @@ newsletter section style
 }
 
 .newsletter-img img {
+    display: block;
     width: 100%;
 
 }
@@ -483,16 +484,19 @@ newsletter section style
     padding:  1em;
     color: #FFF;
     transform: rotate(-19.628deg);
-    border: 10px solid rgba(206, 216, 206, 0.834);
+    
 }
 
 .newsletter-img {
-    border: 5px solid purple;
     position: relative;
 }
 
 .newsletter-img-btn-dis {
     position: absolute;
+    margin-bottom: 2.7em;
+    margin-right: 0.8em;
+    right: 0;
+    bottom: 0;
 }
 
 
